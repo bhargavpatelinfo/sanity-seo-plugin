@@ -28,7 +28,7 @@ Add it as a plugin in `sanity.config.ts` (or .js):
 
 ```ts
 import { defineConfig } from 'sanity';
-import { seoMetaFields } from 'sanity-plugin-seo'
+import { seoMetaFields } from 'sanity-plugin-seo';
 
 export default defineConfig({
   plugins: [seoMetaFields()]
@@ -47,7 +47,18 @@ const myDocument = {
       name: 'seo',
       type: 'seoMetaFields'
     }
-  ]
+  ],
+  preview: {
+    select: {
+      metaTitle: 'seo'
+    },
+    prepare(selection) {
+      const { metaTitle } = selection?.metaTitle || '';
+      return {
+        title: metaTitle || 'seo',
+      };
+    }
+  }
 };
 ```
 

@@ -1,7 +1,18 @@
 declare const seo: {
     '@type': string;
+    nofollowAttributes: string;
     metaTitle: string;
     metaDescription: string;
+    seoKeywords: {
+        '@type': string;
+    }[];
+    openGraph: {
+        url: string;
+        image: string;
+        title: string;
+        description: string;
+        siteName: string;
+    };
     additionalMetaTags: {
         '@type': string;
         metaAttributes: {
@@ -12,15 +23,11 @@ declare const seo: {
             attributeValueString: string;
         }[];
     }[];
-    openGraph: {
-        title: string;
-        image: string;
-        description: string;
-    };
     twitter: {
-        handle: string;
-        site: string;
         cardType: string;
+        creator: string;
+        site: string;
+        handle: string;
     };
 };
 export default seo;

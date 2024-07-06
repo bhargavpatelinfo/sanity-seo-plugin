@@ -4,8 +4,13 @@ export default {
   type: 'object',
   fields: [
     {
-      name: 'handle',
-      title: 'Handle',
+      name: 'cardType',
+      title: 'CardType',
+      type: 'string'
+    },
+    {
+      name: 'creator',
+      title: 'Creator',
       type: 'string'
     },
     {
@@ -14,8 +19,8 @@ export default {
       type: 'string'
     },
     {
-      name: 'cardType',
-      title: 'CardType',
+      name: 'handle',
+      title: 'Handle',
       type: 'string'
     }
   ]

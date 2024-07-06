@@ -1,7 +1,20 @@
 const seo = {
   '@type': 'seoMetaFields',
+  nofollowAttributes: 'boolean',
   metaTitle: 'string',
   metaDescription: 'string',
+  seoKeywords: [
+    {
+      '@type': 'string'
+    }
+  ],
+  openGraph: {
+    url: 'string',
+    image: 'image',
+    title: 'string',
+    description: 'string',
+    siteName: 'string'
+  },
   additionalMetaTags: [
     {
       '@type': 'metaTag',
@@ -16,15 +29,11 @@ const seo = {
       ]
     }
   ],
-  openGraph: {
-    title: 'string',
-    image: 'image',
-    description: 'string'
-  },
   twitter: {
-    handle: 'string',
+    cardType: 'string',
+    creator: 'string',
     site: 'string',
-    cardType: 'string'
+    handle: 'string'
   }
 };
 

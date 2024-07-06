@@ -5,8 +5,19 @@ export declare type Schema = Seo;
 
 export declare type Seo = {
   type: string;
+  nofollowAttributes?: boolean;
   metaTitle?: string;
   metaDescription?: string;
+  seoKeywords?: Array<{
+    type?: string;
+  }>;
+  openGraph?: {
+    url?: string;
+    image?: Image_2;
+    title?: string;
+    description?: string;
+    siteName?: string;
+  };
   additionalMetaTags?: Array<{
     type?: string;
     metaAttributes?: Array<{
@@ -17,15 +28,11 @@ export declare type Seo = {
       attributeValueString?: string;
     }>;
   }>;
-  openGraph?: {
-    title?: string;
-    image?: Image_2;
-    description?: string;
-  };
   twitter?: {
-    handle?: string;
-    site?: string;
     cardType?: string;
+    creator?: string;
+    site?: string;
+    handle?: string;
   };
 };
 
