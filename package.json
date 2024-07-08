@@ -4,7 +4,16 @@
   "description": "The Sanity SEO Field Plugin simplifies the process of generating SEO fields for various types of content. It enhances structured data, making your content more accessible and understandable for search engines, ultimately improving your site's visibility and search performance.",
   "keywords": [
     "sanity",
-    "sanity-plugin-seo"
+    "sanity-plugin-seo",
+    "content",
+    "headless",
+    "cms",
+    "seo",
+    "typescript",
+    "meta-data",
+    "seo-plugin",
+    "meta-tags",
+    "schema"
   ],
   "license": "MIT",
   "exports": {
