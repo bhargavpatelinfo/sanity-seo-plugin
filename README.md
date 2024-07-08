@@ -6,6 +6,9 @@
 
 The `sanity-plugin-seo` Plugin is designed to simplify the process of generating SEO fields for various types of content. This plugin is particularly useful for enhancing the structured data of your content, making it more accessible and understandable for search engines. By integrating seamlessly with Sanity Studio, it provides an easy way to add and configure SEO fields within your document schemas, ensuring your content is fully optimized for search visibility.
 
+![Alt Text](https://github.com/bhargavpatelinfo/sanity-seo-plugin/blob/main/public/assets/demo.gif)
+
+
 ## Key Features
 
 - **Customizable SEO Fields:** Easily add and configure essential SEO fields such as title, description, keywords, and more within your document schemas.
